@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Actualizar Pelicula</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		body{
+				background-color: #CCF;
+			}
+
+			nav{
+				background-color: #CAA;
+				border-radius: 10px;
+			}
+			nav h1{
+				text-align: center;
+			}
+			.menu ul {
+				list-style-type: none;
+				margin: 0px;
+				padding: 0px;
+				border-top-color: #CCC;
+				border-right-color: #CCC;
+				border-left-color: #CCC;
+			}
+
+			li {
+				display: inline;
+			}
+
+			.menu a {
+				font-family: Arial, Helvetica, sans-serif;
+				color: #000;
+				text-decoration: none;
+				font-size: 0.9em;
+				display: block;
+				float: left;
+				padding: 6px;
+				border-bottom-width: 1px;
+				border-bottom-style: solid;
+				border-bottom-color: #CCC;
+				background-color: #EAEAEA;
+			}
+			.menu a:hover{
+				color: #FFF;
+				background-color: #666;
+				border-right-width: 5px;
+				border-right-style: solid;
+				border-right-color: #36F;
+			}
+
+			.menu ul li {
+				clear: both;
+			}
+	</style>
+</head>
+<body>
+	<nav><h1><br>Actualizar Pelicula<br><br></h1></nav>
+
+	<nav class='menu'>
+		<ul>
+			<li><a href="../Galeria de peliculas 2.html">Inicio</a></li>
+			<li><a href="registrar.html">Registrar</a></li>
+			<li><a href="consultar.html">Consultar</a></li>
+			<li><a href="actualizar.html">Actualizar</a></li>
+			<li><a href="eliminar.html">Eliminar</a></li>
+		</ul>
+	</nav>
+
+	<br><br><h3>Para actualizar los datos de una pelicula debes ingresar el nombre de la misma.</h3><br><br>
+
+	<form action="../php/actualizar.php" method="post">
+
+		Nombre: <input type="text" name="nombre"><br><br>		
+		<input type="submit" value="Actualizar">
+	
+	</form>
+
+</body>
+</html>
